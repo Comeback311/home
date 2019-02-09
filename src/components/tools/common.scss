@@ -1,0 +1,27 @@
+.paragraph {
+    font-size: 15px;
+    line-height: 25px;
+
+    letter-spacing: .3px;
+
+    &_type_blockquote {
+        border-left: 3px solid #cecece;
+        padding-left: 15px;
+    }
+
+    & ~ & {
+        padding-top: 20px;
+    }
+}
+
+b {
+    font-weight: bold;
+}
+
+body {
+    background: url('./bg.png');
+}
+
+.code {
+    box-shadow: 0 0 1px #ddd;
+}

@@ -1,0 +1,23 @@
+$footer-height: 35px;
+
+.footer {
+    height: $footer-height;
+    border-top: 1px solid #f6f6f6;
+    box-sizing: border-box;
+
+    background: #fcfcfc;
+
+    &__copy {
+        line-height: $footer-height;
+        font-size: 13px;
+        text-align: right;
+        margin-right: 10px;
+        height: 100%;
+        color: lighten($color: cadetblue, $amount: 15);
+
+        @media screen and (max-width: 375px) {
+            text-align: center;
+            margin-right: 0;
+        }        
+    }
+}
