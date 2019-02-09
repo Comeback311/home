@@ -1,0 +1,69 @@
+.subtitle {
+    font-size: 25px;
+    line-height: 30px;
+    border-bottom: 1px solid #ededed;
+    border-left: 4px solid #C44737;
+
+    padding-left: 12px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+
+    letter-spacing: .5px;
+    font-weight: 600;
+
+    h2 {
+        display: inline;
+
+        & ~ svg {
+            margin-left: 6px;
+            vertical-align: middle;
+
+            cursor: pointer;
+            display: none;
+        }
+
+        &:hover ~ svg {
+            display: inline-block;
+        }
+    }
+
+    &__copied {
+        font-weight: normal;
+
+        font-size: 11px;
+        background: lightgreen;
+
+        border-radius: 12px;
+
+        padding: 1px 6px;
+
+        margin-left: 10px;
+        vertical-align: top;
+    }
+
+    &_size_s {
+        font-size: 22px;
+
+        line-height: 26px;
+
+
+        padding-left: 0;
+        border: none;
+    }
+
+    &__anchor {
+        text-decoration: none;
+        color: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: initial;
+        }
+    }
+}
+  

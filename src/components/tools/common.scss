@@ -1,0 +1,20 @@
+.paragraph {
+    font-size: 18px;
+    line-height: 28px;
+
+    letter-spacing: .3px;
+
+    &_type_blockquote {
+        border-left: 4px solid #cecece;
+        padding-left: 15px;
+    }
+
+    & ~ & {
+        padding-top: 20px;
+    }
+}
+
+b {
+    font-weight: bold;
+}
+

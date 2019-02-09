@@ -1,0 +1,22 @@
+$header-height: 60px;
+$footer-height: 35px;
+
+body {
+    font-family: 'Comfortaa', cursive !important;
+}
+
+.document {
+    min-height: calc(100vh - #{$header-height} - #{$footer-height});
+
+    max-width: 1024px;
+    margin: 0 auto;
+
+    padding: 30px 40px 50px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 450px) {
+    .document {
+        padding: 20px;
+    }
+}
