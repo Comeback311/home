@@ -7,6 +7,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Title from './Title'
 import Landing from './Landing'
+import Code from './Code'
 
 export {
     Document,
@@ -17,5 +18,6 @@ export {
     Header,
     Footer,
     Title,
-    Landing
+    Landing,
+    Code
 };

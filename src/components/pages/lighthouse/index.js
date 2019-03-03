@@ -3,11 +3,12 @@ import React, { Component } from 'react'
 import {
 	Document,
 	Subtitle,
-	Accordion
+	Accordion,
+	Code
 } from '../../components/all'
 
 import * as Icons from './images'
-import * as Code from './code'
+import * as CodeItems from './code'
 
 import './index.scss'
 
@@ -29,17 +30,17 @@ class Lighthouse extends Component {
 				<Subtitle text='Using the Node CLI' />
 				<p className='paragraph'>The Node CLI provides the most flexibility in how Lighthouse runs can be configured and reported. Users who want more advanced usage, or want to run Lighthouse in an automated fashion should use the Node CLI.</p>
 				<p className='paragraph'><b>Installation:</b></p>
-				<div className='code' dangerouslySetInnerHTML={{ __html: Code.default.code1 }}></div>
+				<Code lang='properties' content={CodeItems.default.code1} />
 				<p className='paragraph'><b>Run it:</b></p>
-				<div className='code'>lighthouse https://airhorner.com/</div>
+				<Code lang='properties' content='lighthouse https://airhorner.com/' />
 				<p className='paragraph'>By default, Lighthouse writes the report to an HTML file. You can control the output format by passing flags.</p>
 				<Subtitle text='CLI options' size='s' />
 				<Accordion
-					showedContent={<div className='code' dangerouslySetInnerHTML={{ __html: Code.default.code2 }}></div>}
+					showedContent={<Code lang='properties' content={CodeItems.default.code2} />}
 				/>
 				<Subtitle text='Output Examples' size='s' />
 				<Accordion
-					showedContent={<div className='code' dangerouslySetInnerHTML={{ __html: Code.default.code3 }}></div>}
+					showedContent={<Code lang='properties' content={CodeItems.default.code3} />}
 					opened={true}
 				/>
 				<Subtitle text='Viewing a report' />

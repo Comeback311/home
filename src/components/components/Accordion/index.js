@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './index.scss';
 
+import { firstUpper } from '../../tools/helpers'
+
 class Accordion extends Component {
     constructor(props) {
         super(props);
@@ -19,8 +21,8 @@ class Accordion extends Component {
     render() {
         let { showedContent } = this.props;
 
-        const clickedYes = this.props.clickedYes || 'развернуть';
-        const clickedNo = this.props.clickedNo || 'свернуть';
+        const clickedYes = firstUpper(this.props.clickedYes || 'развернуть');
+        const clickedNo = firstUpper(this.props.clickedNo || 'свернуть');
 
         return (!showedContent ? '' :
             <div className='accordion'>

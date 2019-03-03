@@ -1,3 +1,4 @@
-export default `npm install -g lighthouse
-<span class='code__comment'># or use yarn:</span>
-<span class='code__comment'># yarn global add lighthouse</span>`;
+export default 
+`npm install -g lighthouse
+# or use yarn:
+# yarn global add lighthouse`;

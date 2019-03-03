@@ -68,7 +68,7 @@ alert( positiveArr ); // 1, 5, 2, 4, 3`;
                         <textarea rows='14' className='textarea textarea_type_one' defaultValue={textOne}></textarea>
                         <textarea rows='14' className='textarea textarea_type_two' defaultValue={textTwo}></textarea>
                     </div>
-                    <button className='compare-text-block__button btn btn-outline-primary' onClick={this.onClick.bind(this)}>Click</button>
+                    <button className='compare-text-block__button btn btn-secondary' onClick={this.onClick.bind(this)}>Click</button>
                     <div className='compare-text-block__result'>
                         {this.state.diff && [<p className='paragraph'><b>Результат:</b></p>, this.state.diff.map((item, index) => {
                         const hasChange = this.getClassByValue.call(this, item[0]);

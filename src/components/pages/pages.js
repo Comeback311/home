@@ -6,7 +6,8 @@ import {
     cssGradient,
     uaParser,
     devtoolsDetect,
-    userfulSites
+    userfulSites,
+    userfulArticles
 } from './all'
 
 const pages = [
@@ -50,8 +51,13 @@ const pages = [
     {
         name: 'Userful sites',
         component: userfulSites,
-        keywords: ['sites', 'watch', 'useful']
-    }
+        keywords: ['sites', 'useful']
+    },
+    {
+        name: 'Userful articles',
+        component: userfulArticles,
+        keywords: ['sites', 'articles', 'useful']
+    },
 ]
 
 export default pages

@@ -6,6 +6,7 @@ import cssGradient from './css-gradient'
 import uaParser from './ua-parser'
 import devtoolsDetect from './devtools-detect'
 import userfulSites from './userful-sites'
+import userfulArticles from './userful-articles'
 
 export {
     lighthouse,
@@ -15,5 +16,6 @@ export {
     cssGradient,
     uaParser,
     devtoolsDetect,
-    userfulSites
+    userfulSites,
+    userfulArticles
 }

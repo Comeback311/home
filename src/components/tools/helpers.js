@@ -39,8 +39,16 @@ const removeScript = function(src) {
     }
 }
 
+/**
+ * Делает первую букву слова заглавной
+ */
+function firstUpper(s) {
+    return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
 export { 
     beautifyAnchorText,
     inlineScript,
-    removeScript
+    removeScript,
+    firstUpper
 }

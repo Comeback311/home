@@ -7,6 +7,7 @@
   "main": "index.js",
   "dependencies": {
     "devtools-detect": "^2.2.0",
+    "highlight.js": "^9.15.6",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

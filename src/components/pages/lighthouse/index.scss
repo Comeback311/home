@@ -24,24 +24,3 @@
         text-align: center;
     }
 }
-
-.code {
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 24px;
-
-    white-space: pre;
-    overflow-x: auto;
-
-    margin-top: 15px;
-
-    background: #f7f7f7;
-    border-radius: 2px;
-
-    padding: 13px 15px;
-    
-    &__comment {
-        color: #998;
-        font-style: italic;
-    }
-}

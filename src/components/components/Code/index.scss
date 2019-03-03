@@ -1,0 +1,22 @@
+.code {
+	font-family: monospace;
+	font-size: 14px;
+	line-height: 22px;
+
+	white-space: pre;
+	overflow-x: auto;
+
+	margin-top: 15px;
+
+	background: #f7f7f7;
+	border-radius: 2px;
+
+	padding: 13px 15px;
+
+	&__comment {
+		color: #998;
+		font-style: italic;
+	}
+
+	box-shadow: 0 0 1px #ddd;
+}
