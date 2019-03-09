@@ -1,0 +1,98 @@
+.useful-articles {
+	&__steps {
+		width: 150px;
+		height: 150px;
+		border: 0.2em solid mediumturquoise;
+		border-radius: 50%;
+		font-size: 1.2em;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 0.1em;
+			height: 2.8em;
+			left: 3.7em;
+			top: 3.7em;
+			background: mediumturquoise;
+			animation: timing 60s infinite steps(60);
+			transform-origin: 0 0;
+		}
+
+		@keyframes timing {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	&__portrait {
+		width: 150px;
+		height: auto;
+	}
+
+	&__divider {
+		width: 50%;
+		height: 1px;
+		background: red;
+	}
+
+	&__gradient {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: radial-gradient(circle at 65% 15%, aqua, darkblue);
+	}
+}
+
+.article__divider {
+	$bg: #fff;
+	$barsize: 20px;
+
+	width: 100%;
+	height: 1px;
+	display: block;
+	position: relative;
+	margin-bottom: 0em;
+
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+
+		width: 100%;
+		height: 1px;
+		bottom: 50%;
+		left: 0;
+	}
+
+	&:before {
+		background: linear-gradient(90deg, $bg 0%, $bg 50%, transparent 50%, transparent 100%);
+		background-size: $barsize;
+		background-position: center;
+		z-index: 1;
+	}
+
+	&:after {
+		background: linear-gradient(
+			to right,
+			#62efab 5%,
+			#f2ea7d 15%,
+			#f2ea7d 25%,
+			#ff8797 35%,
+			#ff8797 45%,
+			#e1a4f4 55%,
+			#e1a4f4 65%,
+			#82fff4 75%,
+			#82fff4 85%,
+			#62efab 95%
+		);
+
+		background-size: 200%;
+		background-position: 0%;
+	}
+}

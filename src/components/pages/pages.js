@@ -3,11 +3,10 @@ import {
     cssLogo,
     compare2Texts,
     cssTasks,
-    cssGradient,
     uaParser,
     devtoolsDetect,
-    userfulSites,
-    userfulArticles
+    usefulSites,
+    usefulArticles
 } from './all'
 
 const pages = [
@@ -33,12 +32,6 @@ const pages = [
         hidden: true
     },
     {
-        name: 'Css gradient',
-        component: cssGradient,
-        keywords: ['css', 'gradient'],
-        hidden: true
-    },
-    {
         name: 'UserAgent parser online',
         component: uaParser,
         keywords: ['parser', 'npm', 'utils', 'tools']
@@ -49,13 +42,13 @@ const pages = [
         keywords: ['devtools', 'inspect', 'utils', 'tools']
     },
     {
-        name: 'Userful sites',
-        component: userfulSites,
+        name: 'Useful sites',
+        component: usefulSites,
         keywords: ['sites', 'useful']
     },
     {
-        name: 'Userful articles',
-        component: userfulArticles,
+        name: 'Useful articles',
+        component: usefulArticles,
         keywords: ['sites', 'articles', 'useful']
     },
 ]

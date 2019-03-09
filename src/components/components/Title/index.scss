@@ -38,6 +38,9 @@
             border-left: none;
             border-top-width: 2px;
 
+            padding-left: 0;
+            padding-right: 0;
+
             &::before {
                 display: none;
             }
@@ -46,6 +49,9 @@
 
     .title_size_m {
         .title__header {
+            padding-left: 0;
+            padding-right: 0;
+
             font-size: 24px;
         }
     }
