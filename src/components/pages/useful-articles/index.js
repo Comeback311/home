@@ -13,7 +13,7 @@ class usefulArticless extends Component {
     constructor(props) {
         super(props);
     }
-    
+
     componentDidMount() {
         document.getElementsByClassName('useful-articles__bubbles')[0].innerHTML = bubblesCode;
     }

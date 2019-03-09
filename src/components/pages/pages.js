@@ -6,7 +6,9 @@ import {
     uaParser,
     devtoolsDetect,
     usefulSites,
-    usefulArticles
+    usefulArticles,
+    js,
+    chart
 } from './all'
 
 const pages = [
@@ -51,6 +53,11 @@ const pages = [
         component: usefulArticles,
         keywords: ['sites', 'articles', 'useful']
     },
+    {
+        name: 'JS hacks',
+        component: js,
+        keywords: ['js', 'tools']
+    }
 ]
 
 export default pages

@@ -31,8 +31,10 @@ class Lighthouse extends Component {
 				<p className='paragraph'>The Node CLI provides the most flexibility in how Lighthouse runs can be configured and reported. Users who want more advanced usage, or want to run Lighthouse in an automated fashion should use the Node CLI.</p>
 				<p className='paragraph'><b>Installation:</b></p>
 				<Code lang='properties' content={CodeItems.default.code1} />
+				<br />
 				<p className='paragraph'><b>Run it:</b></p>
 				<Code lang='properties' content='lighthouse https://airhorner.com/' />
+				<br />
 				<p className='paragraph'>By default, Lighthouse writes the report to an HTML file. You can control the output format by passing flags.</p>
 				<Subtitle text='CLI options' size='s' />
 				<Accordion

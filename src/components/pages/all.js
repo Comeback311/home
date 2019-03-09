@@ -6,6 +6,7 @@ import uaParser from './ua-parser'
 import devtoolsDetect from './devtools-detect'
 import usefulSites from './useful-sites'
 import usefulArticles from './useful-articles'
+import js from './js';
 
 export {
     lighthouse,
@@ -15,5 +16,6 @@ export {
     uaParser,
     devtoolsDetect,
     usefulSites,
-    usefulArticles
+    usefulArticles,
+    js
 }
