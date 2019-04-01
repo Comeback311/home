@@ -16,9 +16,12 @@ class usefulSites extends Component {
         const content =
             <React.Fragment>
                 <p className='paragraph'>
-                    <a href='https://regexcrossword.com' target='_blank'>Regexcrossword.com</a> - Welcome to the fantastic world of nerdy regex fun! Start playing by selecting one of the puzzle challenges below. There are a wide range of difficulties from beginner to expert.
+                    <a href='//regexcrossword.com' target='_blank'>Regexcrossword.com</a> - Welcome to the fantastic world of nerdy regex fun! Start playing by selecting one of the puzzle challenges below. There are a wide range of difficulties from beginner to expert.
                     <br />
                     <img className='userful-sites__regexcrossword' src={regexcrossword} />
+                </p>
+                <p className='paragraph'>
+                    <a href='//collabedit.com' target='_blank'>Сollabedit.com</a> - Code writing online
                 </p>
             </React.Fragment>;
 
