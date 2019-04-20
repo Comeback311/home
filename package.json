@@ -3,19 +3,21 @@
   "version": "0.1.0",
   "description": "",
   "keywords": [],
-  "homepage": "https://comeback311.github.io/home/",
+  "homepage": "https://avdeevden.github.io/home/",
   "main": "index.js",
   "dependencies": {
     "devtools-detect": "^2.2.0",
+    "fs": "0.0.1-security",
     "highlight.js": "^9.15.6",
     "node-sass": "^4.11.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-router-dom": "^4.3.1"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
     "react-input-range": "^1.3.0",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5",
     "ua-parser-js": "^0.7.19"
   },

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import {
-    Header,
-    Footer,
     Title,
     Keywords
 } from '../all'
@@ -40,13 +38,11 @@ class Document extends Component {
 
         return (
             <React.Fragment>
-                <Header />
-                <div className={'document ' + (type || '')}>
+                <div className='document'>
                     {!type && <Title text={title} />}
                     {this.props.content}
                     <Keywords keywords={keywords} />
                 </div>
-                <Footer />
             </React.Fragment>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, HashRouter } from 'react-router-dom'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
 
 import '../tools/reset.scss'
 import '../tools/common.scss'
@@ -13,7 +13,7 @@ import Pages from '../pages/pages'
 
 import { beautifyAnchorText } from '../tools/helpers'
 
-const WrappedComponent = function(props) {
+const WrappedComponent = function (props) {
     const Component = props.component;
     // Конструкция "{...props}" нужна, чтобы не потерять
     // параметры, переданные от компонента Route
@@ -22,19 +22,30 @@ const WrappedComponent = function(props) {
 
 const RoutesFromPages = Pages.map((page, index) => {
     return (
-        <Route path={`/pages/${beautifyAnchorText(page.name)}`} component={WrappedComponent.bind(this, page)} key={index}/>
+        <Route path={`/pages/${page.path}`} component={WrappedComponent.bind(this, page)} key={index} />
     )
 })
 
-const Routes = () => (  
-    <HashRouter basename={process.env.PUBLIC_URL}>
+window.addEventListener('resize', resize);
+resize();
+
+function resize() {
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+const Routes = () => (
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
-            { RoutesFromPages }
-            <Route path='/tags/:tag/' component={Tags}/>
-            <Route exact path='/' component={Home}/>
-            <Route path='/*' component={NoFoundPage}/>
+            {RoutesFromPages}
+            <Route path='/tags/:tag/' component={Tags} />
+            <Route exact path='/' component={Home} />
+            <Route path='/*' component={NoFoundPage} />
         </Switch>
-    </HashRouter>  
+    </BrowserRouter>
 )
 
 export default Routes;

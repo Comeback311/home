@@ -4,11 +4,9 @@ import { Document } from '../../components/all'
 
 import './index.scss';
 
-class cssTasks extends Component {
+class css extends Component {
     constructor(props) {
         super(props);
-
-        
     }
 
     render() {
@@ -23,4 +21,4 @@ class cssTasks extends Component {
     }
 }
 
-export default cssTasks;
+export default css;

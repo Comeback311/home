@@ -1,12 +1,9 @@
-$header-height: 60px;
-$footer-height: 35px;
-
 body {
     font-family: 'Comfortaa', cursive !important;
 }
 
 .document {
-    min-height: calc(100vh - #{$header-height} - #{$footer-height});
+    min-height: calc(var(--vh, 1vh) * 100);
 
     max-width: 1024px;
     margin: 0 auto;

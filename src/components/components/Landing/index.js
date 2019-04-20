@@ -12,7 +12,10 @@ class Landing extends Component {
     render() {
         const content = Pages.map((link, index) => {
             return (!link.hidden &&
-                <Link className='link' to={`/pages/${beautifyAnchorText(link.name)}`} key={index}>{link.name}</Link>
+                <div className='landing-item'>
+                    {link.icon && <img className='landing-item__icon' src={link.icon} />}
+                    <Link className='langind-item__link link' to={`/pages/${link.path}`} key={index}>{link.name}</Link>
+                </div>
             )
         })
 
